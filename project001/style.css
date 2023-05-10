@@ -1,0 +1,59 @@
+@charset 'utf-8';
+@import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css');
+
+
+/* 전체설정 */
+* {margin: 0;
+    padding: 0;}
+ul,ol {list-style: none;}
+a {text-decoration: none;
+    color: #000;}
+img {border: 0;
+    vertical-align: bottom;}
+body {font-family: 'Pretendard-Regular', sans-serif;
+        font-size: 14px;}
+
+
+
+
+
+
+
+/* 미디어쿼리구간설정/////////////////////////////////////////////// */
+
+
+/* 588 이하 구간 */
+@media(max-width:587px) {
+
+    
+}
+
+
+/* 768 이상 구간 */
+@media(min-width:768px) {
+
+
+    /* 레이아웃설정 */
+
+
+    /* box1-1과 box1-2의 가로정렬 */
+    .box1 {display: flex;}
+    .box1-1, .box1-2 {width: 50%;}
+    .box1-3 {}
+
+    /* box2-1과 box2-2의 가로정렬 */
+    .box2 {display: flex;}
+    .box2-1, .box2-2 {width: 50%;}
+
+    /* box3-1과 box2-2의 가로정렬 */
+    .box3 {display: flex;}
+    .box3-1, .box3-2 {width: 50%;}
+
+    /* box6-1과 box6-2의 가로정렬 */
+    .box6 {display: flex;}
+    .box6-1, .box6-2 {width: 50%;}
+
+    /* box7-1과 box7-2의 가로정렬 */
+    .box7 {display: flex;}
+    .box7-1, .box7-2 {width: 50%;}
+}
