@@ -17,17 +17,61 @@ img {border: 0;
     vertical-align: bottom;}
 body {font-family: 'Pretendard-Regular', sans-serif;
         font-size: 14px;}
-
+header {background-image: url(../img/bg_1.jpg);
+        width: 100%;
+        height: 940px;
+        position: relative;}
 
 /* logo 설정 */
-.boxA {width: 305px;
-    height: 83px;
-    background-size: contain;
-    background-repeat: no-repeat;}
-.boxA h1 {text-align: center;}
+
+.logo {text-align: center;
+        padding: 30px;}
+.logo h1 {}
+
+/* snsSet 설정 */
+.boxB {
+        position: absolute;
+    top: 50px;
+    left: 50px;}
+.boxB ul {display: flex;}
+.boxB ul li {}
+.boxB ul li a {padding: 7px;}
+.boxB ul li a img {width: 30px;}
 
 
+/* gnb 설정 */
+.gnb {margin-bottom: 60px;}
+.gnb ul {display: flex;
+        padding: 20px;
+        justify-content: center;}
+.gnb ul li {text-align: center;}
+.gnb ul li a {color: #fff;
+                padding: 80px;
+                font-size: 18px;}
 
+
+/* inconSet 설정 */
+.iconSet {
+        display: flex;
+        justify-content: center;}
+.iconSet li {padding: 50px;}
+.iconSet li a {display: block;
+                text-align: center;}
+.iconSet li a p {color: #fff;
+                font-size: 16px;}
+
+/* 슬로건 설정 */
+.boxD {
+        padding: 100px;
+    text-align: center;
+    margin-bottom: 50px;}
+.boxD div {}
+.boxD div h1 {color: #fff;
+line-height: 65px;
+letter-spacing: 2px;
+font-size: 50px;}
+.boxD div h1 em {font-style: normal;
+                color: #7BFFB0;}
 
 
 
