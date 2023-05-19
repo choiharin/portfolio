@@ -18,20 +18,27 @@ h1 {font-size: 70px;
 img {border: 0;
     vertical-align: bottom;}
 body {font-family: 'Pretendard-Regular', sans-serif;
-        font-size: 14px;}
+        font-size: 14px;
+    overflow-x: hidden;}
 header {background-image: url(../img/bg001.jpg);
         width: 100%;
-        position: relative;}
+        height: 1000px;
+        position: relative;
+        background-repeat: no-repeat;
+        background-position: center;}
+
 section {}
-
-
+/* 한페이지당 높이값을 뭘로 줘야할지 모르겠어요 */
+/* 한페이지 지날 때마다 하단에 넘겨지는 바? 만드는거 모르게써용 */
 
 
 /* logo 설정 */
 
 .logo {text-align: center;
-        padding: 30px;}
+        padding: 20px;
+        }
 .logo h1 {}
+.logo img {width: 340px;}
 
 /* snsSet 설정 */
 .boxB {
@@ -58,13 +65,16 @@ section {}
 /* inconSet 설정 */
 .iconSet {
         display: flex;
-        justify-content: center;}
-.iconSet li {padding: 50px;}
+        justify-content: center;
+
+        }
+.iconSet li {padding: 50px 40px;}
 .iconSet li a {display: block;
                 text-align: center;}
 .iconSet li a p {color: #fff;
                 font-size: 16px;
-                padding-top: 20px;}
+                padding-top: 20px;
+                letter-spacing: 1px;}
 .iconSet li:nth-child(3) {margin-top: 30px;}
 .iconSet li:nth-child(3) img {margin-top: -16px;}
 .iconSet li:nth-child(4) p {margin-top: -10px;}
@@ -94,17 +104,26 @@ font-size: 50px;}
 
 
 /* 층별안내설정 */
-.box1 {height: 1000px;}
 
-.box1 .box1-2 ul {display: flex;
-                justify-content: flex-end;}
+.box1 {position: relative;}
+.box1 .box1-1 div {
+position: absolute;
+top: 10%;}
+.box1-2 ul {display: flex;
+                position: absolute;
+                right: 0;
+                top: 12%;
+                z-index: 2;}
 .box1 .box1-2 ul li {background-color: #2400FF;
                     font-size: 20px;
                     color: #fff;
-                    padding: 20px 45px;
-                    margin: 10px;}
+                    padding: 10px 35px;
+                    margin: 10px;
+                    border-radius: 2px;}
+/* 층별안내에 파란박스 야매로 만들어서 보더 안에 파랑 흰색 있는 박스 만드는거 알려주세요!! */
 .box1 .box1-2 ul li:hover {background-color: #7BFFB0;
-                            color: #3a3a3a;}
+color: #3a3a3a;}
+
 
 /*                
 .map_img img {width: 1000px;
@@ -118,7 +137,7 @@ font-size: 50px;}
 
 .map_img {
 position: relative;
-height: 718px;}
+height: 700px;}
 .map_img>div {
 position: absolute;
 display: none;
@@ -131,8 +150,11 @@ display: none;
             background-repeat: no-repeat;
             position: relative;
             z-index: 1;
+            margin-top: 10%;
+
 }
 
+/* 커서 대면 텍스트이미지,설명박스 바뀌게하는거 알려주세요 !!!*/
 .map_img>div .roomBox li {position: absolute;}
 
 .map_img>div .roomBox li:nth-child(1) {left: 38%;
@@ -184,15 +206,17 @@ display: none;
                                 border: 2px solid #2400FF;
                                 padding: 10px 15px;
                                 margin-left: -20px;
-                                width: 829px;}
+                                width: 829px;
+                                }
+
 .map_img>div .txtBox p:nth-child(1){ display: block;}
 .map001>span {font-size: 200px;
                 color: #e6e6e6;
                 font-weight: bold;
                 z-index: -1;
                 position: absolute;
-                top: 50%;
-                left: 85%;}
+                top: 60%;
+                right: -5%;}
 
 
 
@@ -200,30 +224,33 @@ display: none;
 .box2 {margin-top: 50px;
         display: flex;}
 .box2>div {width: 50%;
-                    height: 100vh;
-                    overflow: hidden;}
+        height: 100vh;}
 .box2 .box2-1 {position: relative;}
 
-.box2 .box2-1 p {position: absolute;
-    font-size: 20px;
-    top: 20%;
-    }
+.box2 .box2-1 div:last-child {position: absolute;
+                font-size: 18px;
+                top: 20%;
+                }
+.box2 .box2-1 div:last-child .pro_txt001 {
+                                            margin-top: 10px;
+                                            font-size: 17px;}
 .box2-2 {position: relative;}
 .trailer_1 {}
 .trailer_1 div {display: flex;
     justify-content: flex-end;
     font-size: 70px;
-    font-weight: bold;}
+    font-weight: bold;
+    }
 .trailer_1 div em {font-style: normal;
                     font-size: 16px;
                     font-weight: bold;
                     position: absolute;
                     left: 120%;
-                    top: 1px;}
+                    top: 15px;}
 
-.arrow {background-color: #eee;
-        position: absolute;
-        display: flex;}
+.arrow {position: absolute;
+        top: 60%;
+        left: -20px;}
 .arrow span {display: block;
         font-size: 20px;
         font-weight: 800;
@@ -231,45 +258,74 @@ display: none;
         padding: 15px;
         cursor: pointer;}
 .arrow span:hover {color: #7BFFB0;}
-.box2 .box2-2 .trailer_1 ul {display: flex;}
-.trailer_1 ul li {padding-right: 40px;}
-.trailer_1 ul img:first-child {padding-bottom: 30px;}
-.trailer_1 ul img:first-child {height: 495px;}
-.trailer_1 ul li p {font-size: 16px;}
-.trailer_1 div:nth-child(2) {
-                                position: absolute;
-                                top: 30%;}
-
-
-
+.box2 .box2-2 .trailer_1 ul {display: flex;
+                            margin-left: 30%;}
+.trailer_1 ul li {margin-left: 40px;
+                    position: relative;}
+.trailer_1 ul img:first-child {padding-bottom: 30px;
+    height: 630px;}
+.trailer_1 ul img:nth-child(2) {position: absolute;}
+.trailer_1 ul li p {font-size: 18px;}
+.trailer_1 div:nth-child(2) {position: absolute;
+                                top: 35%;
+                            }
+.trailer_1 ul li .txt {position: absolute;
+                        z-index: 1;
+                        top: 50%;
+                        left: -52%;
+                        margin-left: 20%;}
+.trailer_1 ul li .txt001 {position: absolute;
+                        z-index: 1;
+                        top: 50%;
+                        left: -61%;
+                        margin-left: 20%;}
+.trailer_1 ul li .txt002 {position: absolute;
+                        z-index: 1;
+                        top: 50%;
+                        left: -54%;
+                        margin-left: 20%;}
+.trailer_1 ul li .txt003 {position: absolute;
+                        z-index: 1;
+                        top: 50%;
+                        left: -64%;
+                        margin-left: 20%;}
+.box2 .box2-3 {position: absolute;
+                width: 500px;
+                z-index: -2;
+                left: -7%;
+                }
 
 
 /* 체험안내 설정 */
 .box3 {margin-top: 50px;
     display: flex;}
 .box3>div {width: 50%;
-                height: 100vh;
-                overflow: hidden;}
-.box3 {position: relative;}
-.box3 .box3-1 p {position: absolute;
-font-size: 20px;
-top: 20%;}
+    height: 100vh;}
+.box3 .box3-1 {position: relative;}
+.box3 .box3-1 div:last-child {position: absolute;
+    font-size: 18px;
+    top: 20%;
+    }
+.box3 .box3-1 div:last-child .pro_txt00 {
+                                margin-top: 10px;
+                                font-size: 17px;}
 
+
+.box3-2 {position: relative;}
+.trailer_2 {}
 .trailer_2 div {display: flex;
 justify-content: flex-end;
 font-size: 70px;
-font-weight: bold;}
+font-weight: bold;
+}
 .trailer_2 div em {font-style: normal;
                 font-size: 16px;
                 font-weight: bold;
                 position: absolute;
                 left: 120%;
                 top: 15px;}
-.box3-2 {position: relative;}
-.arrow {background-color: #eee;
-    position: absolute;
-    display: flex;
-    top: 60%;}
+
+.arrow {position: absolute;}
 .arrow span {display: block;
     font-size: 20px;
     font-weight: 800;
@@ -277,29 +333,62 @@ font-weight: bold;}
     padding: 15px;
     cursor: pointer;}
 .arrow span:hover {color: #7BFFB0;}
-.box3 .box3-2 .trailer_2 ul {display: flex;}
-.trailer_2 ul li {}
-.trailer_2 ul img {padding-bottom: 30px;}
-.trailer_2 ul img:first-child {height: 495px;}
+.box3 .box3-2 .trailer_2 ul {display: flex;
+                        margin-left: 30%;}
+.trailer_2 ul li {margin-left: 40px;
+                position: relative;}
+.trailer_2 ul img:first-child {padding-bottom: 30px;
+height: 630px;}
+.trailer_2 ul img:nth-child(2) {position: absolute;}
 .trailer_2 ul li p {font-size: 16px;}
-.trailer_2 div:nth-child(2) {
-    position: absolute;
-    top: 30%;}
+.trailer_2 div:nth-child(2) {position: absolute;
+                            top: 35%;
+                        }
+.trailer_2 ul li .txt {position: absolute;
+                    z-index: 1;
+                    top: 50%;
+                    left: -41%;
+                    }
+.trailer_2 ul li .txt004 {position: absolute;
+                        z-index: 1;
+                        top: 50%;
+                        left:-64%;
+                        margin-left: 20%;}
+.trailer_2 ul li .txt005 {position: absolute;
+                        z-index: 1;
+                        top: 50%;
+                        left:-54%;
+                        margin-left: 20%;}
+.trailer_2 ul li .txt006 {position: absolute;
+                        z-index: 1;
+                        top: 50%;
+                        left:-64%;
+                        margin-left: 20%;}
+.trailer_2 ul li .txt007 {position: absolute;
+                        z-index: 1;
+                        top: 50%;
+                        left:-75%;
+                        margin-left: 20%;}
+.trailer_2 ul li .txt008 {position: absolute;
+                        z-index: 1;
+                        top: 50%;
+                        left:-75%;
+                        margin-left: 20%;}
+.box3 .box3-3 {position: absolute;
+                            width: 500px;
+                            z-index: -2;
+                            left: -5%;
+                            }
 
 
 
 
 /* 공지이벤트 설정 */
-.box4 {}
-.box4>div {}
-.box4 .box4-1 {}
-.box4 .box4-1 div {}
-.box4 .box4-1 div h1 {}
-.box4 .box4-1 div img {}
 .box4 .box4-2 {display: flex;
                 align-items: center;
                 justify-content: center;
-            }
+                
+                margin-top: 50px;}
 .box4 .img_box {width: 500px;
                 border-radius: 10px;}
 .notice_box .img_box {width: 50%;}
@@ -307,21 +396,24 @@ font-weight: bold;}
                             height: 500px;
                             border-radius: 10px;
     background-color: #f2f2f2;
+    position: relative;
     margin-right: 70px;}
-    .box4 .box4-2 .notice_box h2 {background-color: lightcoral;
-                                    margin: 70px 30px 30px 30px;
+    .box4 .box4-2 .notice_box h2 {
+                                    position: absolute;
                                     font-size: 35px;
                                     letter-spacing: 1px;
-                                    font-weight: bold;}
-.box4 .box4-2 .notice_txt {background-color: skyblue;
-                            margin-top: 60px;}
-.box4 .box4-2 .notice_txt li {padding: 15px 30px 15px 30px;
+                                    font-weight: bold;
+                                    left: 30px;
+                                    top: 100px;}
+.box4 .box4-2 .notice_txt {
+                            margin-top: 170px;}
+.box4 .box4-2 .notice_txt li {padding: 15px 0px;
                     border-bottom: 2px dotted #3a3a3a;
                     font-size: 14px;
+                    margin: 0px 30px;
                     }
 .box4 .box4-2 li span {float: right;
                         color: #bababa;
-                        background-color: lightgoldenrodyellow;
                         letter-spacing: 1px;}
 .box4 .box4-2 .trailer_3 ul {display: flex;}
 .trailer_3 {overflow: hidden;}
@@ -335,6 +427,7 @@ font-weight: bold;}
 .box5 {}
 .imgList ul {display: flex;
             flex-wrap: wrap;
+            margin-top: 50px;
 }
 .box5-2 {}
 .imgList li {width: 20%;
@@ -342,6 +435,7 @@ font-weight: bold;}
         text-align: center;}
 
         .imgList li img {width: 150px;}
+/* 이미지 간격설정이 동일하게 안되요! */
 
 
 
@@ -362,27 +456,39 @@ font-weight: bold;}
         opacity: 70%;
         border-radius: 15px;
         position: relative;
-        padding: 40px;}
-.box6-1 div {}
+        padding: 40px;
+        box-sizing: border-box;}
 .box6-1 div:first-child {text-align: right;
+                        padding-bottom: 20px;
+                        border-bottom: 1px solid #fff;}
+.box6-1 div:first-child p {margin-top: 40px;
+                            margin-right: 60px;
+                            font-size: 16px;
                         }
-.box6-1 div:first-child p {position: absolute;
-                            top: 30%;
-                            left: 36%;}
 .box6-1 div:first-child img {position: absolute;
                             left:78%;}
-.box6-1 div:last-child {border-top: 1px solid #fff;
+.box6-1 div:last-child {
                         position: relative;
-                        top: 40px;
-                        margin-top: 30px;
+                        top: -50px;
+                        margin-top:110px;
                         }
 .box6-1 div:last-child img {width: 33px;}
 .box6-1 div:last-child p {padding: 10px 0 20px 0;
-                            line-height: 20px;}
-.box6-1 div:last-child strong {font-size: 20px;}
-
-
+                            line-height: 20px;
+                            font-size: 16px;
+                            line-height: 28px;}                      
+.box6-1 div:last-child strong {font-size: 20px;
+                                margin-left: 5px;}
+.box6-1 div:nth-child(2) .park {
+                                position: absolute;
+                                left: 18%;
+                                top: 68.5%;}
+.box6-1 div:last-child span img {width: 33px;}
 /* 자주하는 질문 설정 */
+/* 글씨 줄바뀜 될 때 앞줄 맞춰지는거 모르겠어요 
+    A.주차시설은 300여대를 수용할 수 있는 주차건물 및 야외주차장ㆍ공영주차장이 마련되어있습니다.
+    주차요금은 무료입니다.
+이럴 때 A.에 맞춰지는거용!*/
 .box7 {
     display: flex;
     margin: auto;}
@@ -392,14 +498,16 @@ font-weight: bold;}
 .box7-2>div {background-color: #f2f2f2;
             border-radius: 20px;
             width: 712px;
-            height: 630px;}
+            height: 600px;
+            margin-top: 5%;}
 .box7-2>div ul {padding: 30px;}
 .box7-2>div ul li {background-color: #fff;
                     border-radius: 5px;
                     padding: 10px;
                     margin-bottom: 20px;
                     font-size: 15px;
-                    padding-left: 20px;}
+                    padding-left: 20px;
+                    }
 .box7-2>div ul li div {padding: 5px 0;}
 .box7-2>div ul li div:first-child {font-weight: bolder;}
 .box7-2>div ul li div em {font-size: 20px;
@@ -421,9 +529,36 @@ font-weight: bold;}
 
 
 /* 푸터 설정 */
-footer {}
-footer>div {background-color: #2a2a2a;
+footer {position: relative;
+    background-color: #4b4b4b;
+    height: 320px;}
+footer>div {
             height: 100px;}
+footer>div img {position: absolute;
+                top: 10%;
+                left: 10%;}
+.add {color: #fff;
+        position: absolute;
+        top: 65%;
+        left: 15%;
+        line-height: 20px;
+        letter-spacing: 1px;
+        font-size: 15px;}
+/* 사업자등록번호 앞 띄어쓰기했어도 화면에서는 붙어서 나오는데 
+그 부분만 자간을 띄우려면 어떻게 하나용?*/
+.menu2 {color: #fff;
+        display: flex;
+        text-align: center;
+        justify-content: flex-end;
+        margin-right: 7%;}
+.menu2 ul {
+        margin: -10px 40px;}
+.menu2 ul li:first-child {font-weight: bolder;
+                            font-size: 20px;
+                            margin-bottom: 20px;}
+.menu2 ul li {margin-bottom: 10px;
+                font-size: 16px;}
+
 
 
 
@@ -452,7 +587,7 @@ footer>div {background-color: #2a2a2a;
 
 .box1, .box2, .box3, .box4, .box5, .box6, .box7 {
     width: 1280px;
-    height: 1000px;
+    height: 1200px;
     margin-left:  auto;
     margin-right: auto;}
 }
