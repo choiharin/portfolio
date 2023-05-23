@@ -421,8 +421,6 @@ height: 630px;}
 
 
 
-
-
 /* 지금아쿠아리움은 설정 */
 .box5 {}
 .imgList ul {display: flex;
@@ -432,7 +430,8 @@ height: 630px;}
 .box5-2 {}
 .imgList li {width: 20%;
             padding-bottom: 20px;
-        text-align: center;}
+        text-align: center;
+            }
 
         .imgList li img {width: 150px;}
 /* 이미지 간격설정이 동일하게 안되요! */
@@ -444,20 +443,25 @@ height: 630px;}
 
 
 /* 오시는 길 설정 */
+iframe {width: 100%;
+    height: 100%;}
 .box6 {
     display: flex;
     margin: auto;
     color: #fff;
-    justify-content: flex-end;
-}
+    flex-wrap: wrap;
+position: relative;
+height: 1000px;}
 .box6 .box6-1 {background-color: #2400FF;
         width: 465px;
-        height: 540px;
+        height: 600px;
         opacity: 70%;
         border-radius: 15px;
-        position: relative;
+        position: absolute;
         padding: 40px;
-        box-sizing: border-box;}
+        box-sizing: border-box;
+        top: 20%;
+        right: 10%;}
 .box6-1 div:first-child {text-align: right;
                         padding-bottom: 20px;
                         border-bottom: 1px solid #fff;}
@@ -484,14 +488,17 @@ height: 630px;}
                                 left: 18%;
                                 top: 68.5%;}
 .box6-1 div:last-child span img {width: 33px;}
+
+
+
+
 /* 자주하는 질문 설정 */
 /* 글씨 줄바뀜 될 때 앞줄 맞춰지는거 모르겠어요 
     A.주차시설은 300여대를 수용할 수 있는 주차건물 및 야외주차장ㆍ공영주차장이 마련되어있습니다.
     주차요금은 무료입니다.
 이럴 때 A.에 맞춰지는거용!*/
 .box7 {
-    display: flex;
-    margin: auto;}
+    display: flex;}
 .box7>div {width: 50%;}
 .box7-1 .box-2 {}
 .box7-2 {}
@@ -585,9 +592,10 @@ footer>div img {position: absolute;
 /* 1140px 이상구간  */
 @media(min-width:1140px) {
 
-.box1, .box2, .box3, .box4, .box5, .box6, .box7 {
+.box1, .box2, .box3, .box4, .box5, .box7 {
     width: 1280px;
     height: 1200px;
     margin-left:  auto;
-    margin-right: auto;}
+    margin-right: auto;
+    margin-top: 5%;}
 }
