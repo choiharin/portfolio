@@ -1,14 +1,164 @@
 @charset 'UTF-8';
+@font-face {
+        font-family: 'Pretendard-Regular';
+        src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+        font-weight: 400;
+        font-style: normal;}
 
 
 /* 전체설정 */
 *{margin: 0;
-    padding: 0;}
+        padding: 0;}
 ul,ol {list-style: none;
         text-decoration: none;}
+img {vertical-align: bottom;}
+body {font-family: 'Pretendard-Regular', sans-serif;
+        font-size: 14px;}
+a {text-decoration: none;}
+
+
+.vid001 {position: absolute;
+left: 0;
+top: 0;
+width: 100%;
+height: 100%;
+z-index: 22;
+display: none;}
+.vid001 div {width: 110px;
+                height: 28px;
+                border: 2px solid #FB3F50;
+                border-radius: 20px;
+                position: absolute;
+                right: 60px;
+                bottom: 40px;}
+.vid001 div p {font-size: 20px;
+                font-weight: bold;
+                color: #FB3F50;
+                padding: 0 15px;
+                }
 
 /* 헤더설정 */
+header {position: relative;
+z-index: 1;
+width: 100%;
+height: 100vh;}
+.bar {width: 100%;
+        height: 35px;
+        background-color: #FB3F50;}
+
+.bar ul {text-align: center;
+        align-items: center;}
+.bar ul li {font-size: 14px;
+        font-weight: bold;
+        color: #fff;
+        padding: 8px;
+}
+
+.user {background-color: antiquewhite;}
+input {
+	border: 2px solid #FB3F50;
+	min-width:12em;
+        border-radius: 20px;
+        height: 20px;
+        position: absolute;
+        right: 13%;
+        top: 5%;
+}
+
+.user ul {display: flex;
+        position: absolute;
+        right: 30px;
+        top: 50px;}
+.user ul li {font-size: 16px;
+                color: #FB3F50;
+        padding-right: 15px;}
+
+.boxA {justify-content: center;
+        text-align: center;}
+.boxA .logo001 {}
+.boxA .logo002 {position: absolute;
+                left: 50%;
+                margin-left: -268.5px;
+                bottom: 30px;}
+
+.boxB {}
+.boxB ul {display: flex;}
+.boxB ul li {}
+.boxB ul li a {}
+
+.boxC {}
+.boxC ul {position: absolute;
+        bottom: 30px;
+        left: 20px;}
+.boxC ul li {font-size: 32px;
+                color: #FB3F50;
+                font-weight: bold;
+                }
+
+.boxD {}
+.boxD ul {display: flex;
+                position: absolute;
+        right: 30px;
+        bottom: 60px;}
+.boxD ul li {color: #FB3F50;
+                font-size: 18px;
+                padding-right:4px;
+                }
+
+.boxE {}
+.boxE ul {display: flex;
+        position: absolute;
+        bottom: 30px;
+        right: 30px;}
+.boxE ul li {color: #FB3F50;
+        font-size: 18px;
+        padding-right:6px;
+        
+        }
 
 
+/* 첫번째 섹션설정 */
 
+.box1 .vid001 {width: 100%;
+                height: 100vh;}
 
+/* 두번째 섹션설정 */
+
+.box2 {}
+.box2 div {}
+.box2 div ul {margin: 30px 0;}
+.box2 div ul li {font-size: 40px;
+                font-weight: bold;}
+.box2 div ul li:nth-child(1) {color: #d2d2d2;}
+.box2 div ul li:nth-child(2) {color: #FB3F50;
+                                margin-top: 10px;}
+
+/* 세번째 섹션설정 */
+
+.box3 {height: 1440px;
+        }
+.box3 ul {display: flex;
+        margin-bottom: 10%;
+        justify-content: center;
+        align-items: center;
+        position: relative;}
+.box3 ul li {margin: 0 5px;
+                display: block;}
+.box3 ul div {margin-top: 10px;
+                font-size: 15px;}
+.box3 ul div span {font-size: 13px;
+                margin-left: 10px;}
+.box3 ul div span em {color: #FB3F50;}
+.box3 ul div img {}
+
+/* 네번째 섹션설정 */
+
+.box4 {}
+.box4 .arrow {}
+.box4 .arrow span {font-size: 48px;
+                color: #FB3F50;}
+.box4 .arrow span:nth-child(1) {}
+.box4 .arrow span:nth-child(2) {}
+
+.box4 .gallery001 {}
+.box4 .img001 {display: flex;}
