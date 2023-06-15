@@ -10,11 +10,14 @@
 *{margin: 0;
         padding: 0;}
 ul,ol {list-style: none;
-        text-decoration: none;}
+        }
 img {vertical-align: bottom;}
 body {font-family: 'Pretendard-Regular', sans-serif;
         font-size: 14px;}
-a {text-decoration: none;}
+a {text-decoration: none;
+color: #000;}
+
+
 
 
 .vid001 {position: absolute;
@@ -41,10 +44,30 @@ display: none;}
 header {position: relative;
 z-index: 1;
 width: 100%;
-height: 100vh;}
+height: 100vh;
+overflow: hidden;}
 .bar {width: 100%;
         height: 35px;
         background-color: #FB3F50;}
+
+.bar .left001 {font-size: 18px;
+        color: #fff;
+        font-weight: bold;
+        font-size: 20px;
+        z-index: 999;
+        position: absolute;
+        left: 30%;
+        top: 3px;}
+.bar .right001 {font-size: 18px;
+        color: #fff;
+        font-weight: bold;
+        font-size: 20px;
+        z-index: 999;
+        position: absolute;
+        right: 30%;
+        top: 3px;}
+
+
 
 .bar ul {text-align: center;
         align-items: center;}
@@ -63,6 +86,7 @@ input {
         position: absolute;
         right: 13%;
         top: 5%;
+        padding: 5px 7px;
 }
 
 .user ul {display: flex;
@@ -72,6 +96,7 @@ input {
 .user ul li {font-size: 16px;
                 color: #FB3F50;
         padding-right: 15px;}
+.user ul li:nth-child(4) {margin-top: -2px;}
 
 .boxA {justify-content: center;
         text-align: center;}
@@ -135,30 +160,161 @@ input {
 
 /* 세번째 섹션설정 */
 
-.box3 {height: 1440px;
-        }
+.box3 {overflow: hidden;
+        width: 100%;}
+
+
 .box3 ul {display: flex;
         margin-bottom: 10%;
         justify-content: center;
         align-items: center;
         position: relative;}
-.box3 ul li {margin: 0 5px;
-                display: block;}
+
+.box3 ul .box {display: flex;
+justify-content: space-between;
+align-items: center;}
+
+
+.box3 ul li {
+width: 19%;
+        margin-left: 1%;
+                display: block;
+        overflow: hidden;
+}
+
+.box3 ul li a {display: block;}
 .box3 ul div {margin-top: 10px;
                 font-size: 15px;}
-.box3 ul div span {font-size: 13px;
-                margin-left: 10px;}
-.box3 ul div span em {color: #FB3F50;}
-.box3 ul div img {}
 
+
+.box3 ul div span {font-size: 13px;
+                }
+.box3 ul div span em {color: #FB3F50;}
+.box3 ul div img {max-width: 100%;
+                }
+
+
+
+
+                
 /* 네번째 섹션설정 */
 
-.box4 {}
-.box4 .arrow {}
-.box4 .arrow span {font-size: 48px;
-                color: #FB3F50;}
-.box4 .arrow span:nth-child(1) {}
-.box4 .arrow span:nth-child(2) {}
+/* 메모장에 잘라놓음 */
+.box4 {position: relative;
+width: 100%;
+height: 100vh;
+overflow: hidden;
+display: flex;
+justify-content: center;
+align-items: center;}
+.box4 span {display: flex;
+        justify-content: center;
+align-items: center;}
+.box4 .left002 {position: absolute;
+top:50%;
+width: 50px;
+height: 50px;
+margin-top: -25px;
+z-index: 999;
+left: 50px;
+color: #FB3F50;
+font-weight: bold;
+font-size: 60px;
+}
+.box4 .right002 {position: absolute;
+top:50%;
+width: 50px;
+height: 50px;
+margin-top: -25px;
+z-index: 999;
+right: 50px;
+color: #FB3F50;
+font-weight: bold;
+font-size: 60px;
+}
 
-.box4 .gallery001 {}
-.box4 .img001 {display: flex;}
+.box4 .gallery {width: 40%;
+        height: 693px;
+position: relative;}
+.box4 .post {width: 30%;
+}
+
+.box4 .gallery>div {
+        position: absolute;
+        left: 0;
+        top: 0;
+        display: flex;
+}
+
+.box4 .gallery>div .imgBox {   width: 500px;
+        height: 693px;
+overflow: hidden; }
+.box4 .gallery>div .imgBox p {width: 100%;
+height: 100%;}
+.box4 .gallery>div .imgBox p img{width: 100%;
+        height: auto}
+
+.box4 .gallery>div .imglist {width: 90px;
+        height: 560px;
+        overflow: hidden;
+        margin-left: 90px;
+        margin-top: 10%;
+        }
+.box4 .gallery>div .imglist p {width: 90px;
+                                height: 130px;
+                                margin-top: 10px;}
+.box4 .gallery>div .imglist p img {width: 100%;}
+
+
+
+
+
+/* 다섯번째 섹션설정 */
+.box5 {display: flex;
+width: 100%;
+height: 100vh;}
+.box5 div {width: 50%;
+        height: 100vh;
+overflow: hidden;}
+
+.box5 div img{height: 100%;}
+.box5 div video{height: 100%;}
+
+
+
+/* 여섯번째 섹션설정 */
+.box6 {
+        text-align: center;
+        width: 100%;
+        height: 200px;
+}
+.box6 img {display: inline-block;
+                margin-top: 40px;}
+.box6 img:nth-child(1) {}
+.box6 img:nth-child(2) {padding-bottom: 7px;}
+
+
+
+
+/* 푸터설정 */
+
+footer {height: 500px;
+        width: 100%;
+        background-color: #5b5b5b;
+        position: relative;}
+footer div {display: flex;}
+footer div ul {color: #fff;
+                margin: 60px 60px}
+footer div ul li {margin-bottom: 10px;
+                font-size: 15px;}
+footer div ul li:nth-child(1) {font-size: 20px;
+                                font-weight: bold;
+                                margin-bottom: 20px;}
+
+footer div img {position: absolute;
+                bottom: 20%;
+                right: 60px;}
+footer p {color: #fff;
+        position: absolute;
+        bottom: 20px;
+        right: 60px;}
