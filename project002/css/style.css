@@ -72,9 +72,9 @@ overflow: hidden;}
 .bar ul {text-align: center;
         align-items: center;}
 .bar ul li {font-size: 14px;
-        font-weight: bold;
         color: #fff;
         padding: 8px;
+        letter-spacing: 1px;
 }
 
 .user {background-color: antiquewhite;}
@@ -162,19 +162,23 @@ input {
 /* 세번째 섹션설정 */
 
 .box3 {overflow: hidden;
-        width: 100%;}
+        min-width: 100%;}
 
 
 .box3 ul {display: flex;
         margin-bottom: 10%;
         justify-content: center;
         align-items: center;
-        position: relative;}
+        position: relative;
+padding-left: 25px;
+}
 
-.box3 ul .box {display: flex;
-justify-content: space-between;
-align-items: center;}
+.box3 ul .box {display: flex;}
 
+
+.box3 ul .box .txt {
+                        text-align: left;
+}
 
 .box3 ul li {
 width: 19%;
@@ -187,25 +191,37 @@ height: 100%;
 
 .box3 ul li a {display: block;
 text-align: center;
+justify-content: center;
 position: relative;
 }
 
-.box3 ul li a img {}
 
-.box3 ul li a .img {width: 100%;
-opacity: 1;
+
+.box3 ul li a .listhover {position: relative;
+                width: 328.11px;
+                height: 441.48px;
+                display: block;
+        }
+
+.box3 ul li a .listhover img {width: 100%;
+position: absolute;
+left: 0;
+top: 0;
+opacity: 0;
+
 }
-.box3 ul li a .hover {width: 100%;
-                        opacity: 0;
-                        height: 411.48px;
+.box3 ul li a .listhover img.img {
+                        opacity: 1;
+                }
 
-}
+.box3 ul li a .listhover:hover .img {opacity: 0;}
+.box3 ul li a .listhover:hover .hover {opacity: 1;}
 
-
+.box3 ul li a .box {position: relative;
+                        width: 328.11px;}
 
 .box3 ul div {margin-top: 10px;
                 font-size: 15px;
-                background-color: aquamarine;
 }
 
 
@@ -213,9 +229,26 @@ opacity: 1;
                 }
 .box3 ul div span em {color: #FB3F50;
                         font-style: normal;}
-.box3 ul div img {max-width: 100%;
-                }
 
+.box3 ul li a .heart {}
+
+.box3 ul li a .heart img {
+                        width: 100%;
+                        position: absolute;
+                        left: 0;
+                        top: 0;
+                        opacity: 0;
+                        width: 18px;
+                        height: 16px;
+                        display: block;
+                        top: 10px;
+                        left: 309px;
+}
+.box3 ul li a .heart img.heart001 {opacity: 1;
+}
+
+.box3 ul li a .heart:hover .heart001 {opacity: 0;}
+.box3 ul li a .heart:hover .heart002 {opacity: 1;}
 
 
 
@@ -403,4 +436,5 @@ footer div img {position: absolute;
 footer p {color: #fff;
         position: absolute;
         bottom: 20px;
-        right: 60px;}
+        right: 60px;
+        letter-spacing: 1px;}
