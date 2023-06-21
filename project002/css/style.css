@@ -199,14 +199,94 @@ input {
 
 /* 두번째 섹션설정 */
 
-.box2 {}
+.box2 {width: 100%;
+        height: 200px;
+        position: relative;
+overflow: hidden;}
 .box2 div {}
 .box2 div ul {margin: 30px 0;}
-.box2 div ul li {font-size: 40px;
-                font-weight: bold;}
-.box2 div ul li:nth-child(1) {color: #d2d2d2;}
-.box2 div ul li:nth-child(2) {color: #FB3F50;
-                                margin-top: 10px;}
+.box2 div ul li {font-size: 45px;
+                font-weight: bold;
+                width: 1450px;
+        height: 50px;
+        position: absolute;
+        display: flex;}
+.box2 div .box2-1 li:nth-child(1) {color: #d2d2d2;
+        left: 0;
+        top: 10%;
+        animation: ani2 50s linear infinite;}
+.box2 div .box2-1 li:nth-child(2) {color: #d2d2d2;
+        left: -1450px;
+        top: 10%;
+        animation: ani1 50s linear infinite;}
+
+.box2 div .box2-2 li:nth-child(1) {color: #FB3F50;
+                                                                margin-top: 10px;
+                                                                left: 0%;
+                                                                bottom: 30%;
+        animation: ani3 50s linear infinite;
+}
+.box2 div .box2-2 li:nth-child(2) {color: #FB3F50;
+                                                                margin-top: 10px;
+                                                                left: 1450px;
+                                                                bottom: 30%;
+        animation: ani4 50s linear infinite;
+}
+
+@keyframes ani1 {
+
+        0% {
+                left: 1450px;
+                }
+                50% {left: 0;}
+                100% {
+                left: -1450px;
+                }
+}
+
+@keyframes ani2 {
+
+        0% {
+                left: 0;
+        }
+        50% {left: -1450px;}
+        50.0000001% {left: 1450px;}
+        100% {
+                left: 0;
+        }
+}
+
+@keyframes ani3 {
+        0% {
+                left: 0;
+        }
+        50% {left: 1450px;}
+        50.0000001% {left: -1450px;}
+        100% {
+                left: 0;
+        }
+
+
+}
+
+@keyframes ani4 {
+
+        0% {
+                left: -1450px;
+                }
+                50% {left: 0;}
+                100% {
+                left: 1450px;
+                }
+
+
+}
+
+
+
+
+
+
 
 /* 세번째 섹션설정 */
 
@@ -309,7 +389,6 @@ opacity: 0;
                 
 /* 네번째 섹션설정 */
 
-/* 메모장에 잘라놓음 */
 .box4 {position: relative;
 width: 100%;
 height: 100vh;
@@ -330,6 +409,7 @@ left: 50px;
 color: #FB3F50;
 font-weight: bold;
 font-size: 60px;
+cursor: pointer;
 }
 .box4 .right002 {position: absolute;
 top:50%;
@@ -341,6 +421,7 @@ right: 50px;
 color: #FB3F50;
 font-weight: bold;
 font-size: 60px;
+cursor: pointer;
 }
 
 .box4 .gallery {width: 40%;
@@ -360,7 +441,8 @@ position: relative;}
         height: 693px;
 overflow: hidden; }
 .box4 .gallery>div .imgBox p {width: 100%;
-height: 100%;}
+height: 100%;
+opacity: 0;}
 .box4 .gallery>div .imgBox p img{width: 100%;
         height: auto}
 
@@ -372,7 +454,8 @@ height: 100%;}
         }
 .box4 .gallery>div .imglist p {width: 90px;
                                 height: 130px;
-                                margin-top: 10px;}
+                                margin-top: 10px;
+                                }
 .box4 .gallery>div .imglist p img {width: 100%;}
 
 

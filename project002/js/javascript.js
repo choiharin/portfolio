@@ -69,6 +69,27 @@ if(s==2){
 }
 
 
+// 볼드컬렉션
+//right002를 클릭했을 때, 다음이미지가 보여라.
+
+$('.right002').click(function(){
+
+    $('.gellery001').css({'opacity':'1'})
+})
+
+
+
+
+// 하단로고 효과
+
+$('.logo003').mousewheel(function(event,delta){
+
+
+
+
+})
+
+
     })
 
 
