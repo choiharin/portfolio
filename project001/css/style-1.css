@@ -20,12 +20,13 @@ img {border: 0;
 body {font-family: 'Pretendard-Regular', sans-serif;
         font-size: 14px;
     overflow-x: hidden;}
-header {background-image: url(../img/bg001.jpg);
+header {background-image: url(../img/bg003.jpg);
         width: 100%;
-        height: 1000px;
+        height: 100vh;
         position: relative;
-        background-repeat: no-repeat;
-        background-position: center;}
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;}
 
 section {}
 /* 한페이지당 높이값을 뭘로 줘야할지 모르겠어요 */
