@@ -1,0 +1,590 @@
+@charset 'UTF-8';
+@font-face {
+        font-family: 'Pretendard-Regular';
+        src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+        font-weight: 400;
+        font-style: normal;}
+
+
+/* 전체설정 */
+*{margin: 0;
+        padding: 0;}
+ul,ol {list-style: none;
+        }
+img {vertical-align: bottom;}
+body {font-family: 'Pretendard-Regular', sans-serif;
+        font-size: 14px;}
+a {text-decoration: none;
+color: #000;}
+
+
+
+
+.vid001 {position: relative;
+left: 0;
+top: 0;
+width: 100%;
+height: 100vh;
+z-index: 22;
+position: fixed;
+
+}
+.vid001 div {width: 110px;
+                height: 28px;
+                border: 2px solid #FB3F50;
+                border-radius: 20px;
+                position: absolute;
+                right: 60px;
+                bottom: 40px;
+                cursor: pointer;}
+.vid001 div p {font-size: 20px;
+                font-weight: bold;
+                color: #FB3F50;
+                padding: 0 15px;
+                margin-top: 2px;
+                }
+
+/* 헤더설정 */
+header {position: relative;
+z-index: 1;
+width: 100%;
+height: 100vh;
+overflow: hidden;}
+.bar {width: 100%;
+        height: 35px;
+        background-color: #FB3F50;}
+
+.bar span {cursor: pointer;}
+
+.bar .left001 {font-size: 18px;
+        color: #fff;
+        font-weight: bold;
+        font-size: 20px;
+        z-index: 999;
+        position: absolute;
+        left: 30%;
+        top: 3px;}
+.bar .right001 {font-size: 18px;
+        color: #fff;
+        font-weight: bold;
+        font-size: 20px;
+        z-index: 999;
+        position: absolute;
+        right: 30%;
+        top: 3px;}
+
+
+
+.bar ul {display: flex;
+top: 0;
+left: 50%;
+margin-left: -300px;
+justify-content: center;
+align-items: center;
+text-align: center;
+width :600px;
+height: 30px;
+position: relative;
+overflow: hidden;
+
+}
+.bar ul li {position: absolute;
+        font-size: 14px;
+        color: #fff;
+        letter-spacing: 1px;
+        top: 9px;
+        left: 100%;
+
+        width: 600px;
+        height: 30px;
+        
+        
+}
+
+.bar ul li:nth-child(1) {left: 0;}
+
+
+
+
+.user {background-color: antiquewhite;}
+input {
+	border: 2px solid #FB3F50;
+	min-width:12em;
+        border-radius: 20px;
+        height: 20px;
+        position: absolute;
+        right: 13%;
+        top: 5%;
+        padding: 5px 7px;
+}
+
+.user ul {display: flex;
+        position: absolute;
+        right: 30px;
+        top: 50px;}
+.user ul li {font-size: 16px;
+                color: #FB3F50;
+        padding-right: 15px;}
+.user ul li:nth-child(4) {margin-top: -2px;}
+
+.boxA {justify-content: center;
+        text-align: center;}
+.boxA .logo001 {}
+.boxA .logo002 {position: absolute;
+                left: 50%;
+                margin-left: -268.5px;
+                bottom: 30px;}
+
+
+
+
+.boxB {position: relative;
+}
+.boxB ul {
+        position: absolute;
+        width: 5848px;
+        height: 100%;
+        z-index: -999;
+        left: -130px;
+        top: -40px;
+
+}
+.boxB ul li {
+        width: 715px;
+        height: 731px;
+        float: left;
+        box-sizing: border-box;
+}
+
+
+
+
+
+
+.boxC {z-index: 999;}
+.boxC ul {position: absolute;
+        bottom: 30px;
+        left: 20px;}
+.boxC ul li {font-size: 32px;
+                color: #FB3F50;
+                font-weight: bold;
+
+                }
+
+.boxD {}
+.boxD ul {display: flex;
+                position: absolute;
+        right: 30px;
+        bottom: 60px;}
+.boxD ul li {color: #FB3F50;
+                font-size: 18px;
+                padding-right:4px;
+                }
+
+.boxE {}
+.boxE ul {display: flex;
+        position: absolute;
+        bottom: 30px;
+        right: 30px;}
+.boxE ul li {color: #FB3F50;
+        font-size: 18px;
+        padding-right:6px;
+        
+        }
+
+
+/* 첫번째 섹션설정 */
+
+.box1 {width: 100%;
+                height: 100vh;
+                overflow: hidden;}
+
+/* 두번째 섹션설정 */
+
+.box2 {width: 100%;
+        height: 200px;
+        position: relative;
+overflow: hidden;}
+.box2 div {}
+.box2 div ul {margin: 30px 0;}
+.box2 div ul li {font-size: 45px;
+                font-weight: bold;
+                width: 1450px;
+        height: 50px;
+        position: absolute;
+        display: flex;}
+.box2 div .box2-1 li:nth-child(1) {color: #d2d2d2;
+        left: 0;
+        top: 10%;
+        animation: ani2 50s linear infinite;}
+.box2 div .box2-1 li:nth-child(2) {color: #d2d2d2;
+        left: -1450px;
+        top: 10%;
+        animation: ani1 50s linear infinite;}
+
+.box2 div .box2-2 li:nth-child(1) {color: #FB3F50;
+                                                                margin-top: 10px;
+                                                                left: 0%;
+                                                                bottom: 30%;
+        animation: ani3 50s linear infinite;
+}
+.box2 div .box2-2 li:nth-child(2) {color: #FB3F50;
+                                                                margin-top: 10px;
+                                                                left: 1450px;
+                                                                bottom: 30%;
+        animation: ani4 50s linear infinite;
+}
+
+@keyframes ani1 {
+
+        0% {
+                left: 1450px;
+                }
+                50% {left: 0;}
+                100% {
+                left: -1450px;
+                }
+}
+
+@keyframes ani2 {
+
+        0% {
+                left: 0;
+        }
+        50% {left: -1450px;}
+        50.0000001% {left: 1450px;}
+        100% {
+                left: 0;
+        }
+}
+
+@keyframes ani3 {
+        0% {
+                left: 0;
+        }
+        50% {left: 1450px;}
+        50.0000001% {left: -1450px;}
+        100% {
+                left: 0;
+        }
+
+
+}
+
+@keyframes ani4 {
+
+        0% {
+                left: -1450px;
+                }
+                50% {left: 0;}
+                100% {
+                left: 1450px;
+                }
+
+
+}
+
+
+
+
+
+
+
+/* 세번째 섹션설정 */
+
+.box3 {overflow: hidden;
+        min-width: 100%;}
+
+
+.box3 ul {display: flex;
+        margin-bottom: 10%;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+padding-left: 25px;
+}
+
+.box3 ul .box {display: flex;}
+
+
+.box3 ul .box .txt {
+                        text-align: left;
+}
+
+.box3 ul li {
+width: 19%;
+height: 100%;
+        margin-left: 0.5%;
+        margin-right: 0.5%;
+                display: block;
+        overflow: hidden;
+}
+
+.box3 ul li a {display: block;
+text-align: center;
+justify-content: center;
+position: relative;
+}
+
+
+
+.box3 ul li a .listhover {position: relative;
+                width: 328.11px;
+                height: 441.48px;
+                display: block;
+        }
+
+.box3 ul li a .listhover img {width: 100%;
+position: absolute;
+left: 0;
+top: 0;
+opacity: 0;
+
+}
+.box3 ul li a .listhover img.img {
+                        opacity: 1;
+                }
+
+.box3 ul li a .listhover:hover .img {opacity: 0;
+        transition: all 0.8s;}
+.box3 ul li a .listhover:hover .hover {opacity: 1;
+        transition: all 0.8s;}
+
+.box3 ul li a .box {position: relative;
+                        width: 328.11px;}
+
+.box3 ul div {margin-top: 10px;
+                font-size: 15px;
+}
+
+
+.box3 ul div span {font-size: 13px;
+                margin-left: 10px;
+                }
+.box3 ul div span em {color: #FB3F50;
+                        font-style: normal;}
+
+.box3 ul li a .heart {}
+
+.box3 ul li a .heart img {
+                        width: 100%;
+                        position: absolute;
+                        left: 0;
+                        top: 0;
+                        opacity: 0;
+                        width: 18px;
+                        height: 16px;
+                        display: block;
+                        top: 10px;
+                        left: 309px;
+}
+.box3 ul li a .heart img.heart001 {opacity: 1;
+}
+
+.box3 ul li a .heart:hover .heart001 {opacity: 0;
+                                        transition: all 0.6s;}
+.box3 ul li a .heart:hover .heart002 {opacity: 1;
+                                        transition: all 0.6s;}
+
+
+
+                
+/* 네번째 섹션설정 */
+
+.box4 {position: relative;
+width: 100%;
+height: 100vh;
+overflow: hidden;
+display: flex;
+justify-content: center;
+align-items: center;}
+.box4 span {display: flex;
+        justify-content: center;
+align-items: center;
+background-color: #fff;
+width: 50px;
+height: 50px;}
+.box4 .left002 {position: absolute;
+top:50%;
+width: 50px;
+height: 50px;
+margin-top: -25px;
+z-index: 999;
+left: 50px;
+color: #FB3F50;
+font-weight: bold;
+font-size: 60px;
+cursor: pointer;
+}
+.box4 .right002 {position: absolute;
+top:50%;
+width: 50px;
+height: 50px;
+margin-top: -25px;
+z-index: 999;
+right: 50px;
+color: #FB3F50;
+font-weight: bold;
+font-size: 60px;
+cursor: pointer;
+}
+
+.box4 .gallery {width: 40%;
+        height: 693px;
+position: relative;
+}
+
+.box4 .gallery>div.on {z-index: 3;}
+
+
+
+.box4 .post {width: 30%;
+}
+
+.box4 .gallery>div {
+        position: absolute;
+        left: 0;
+        top: 0;
+        display: flex;z-index: 1;
+}
+
+.box4 .gallery>div .imgBox {   width: 500px;
+        height: 693px;
+overflow: hidden;
+position: relative;}
+.box4 .gallery>div .imgBox p {width: 100%;
+height: 100%;
+opacity: 0;
+position: absolute;}
+.box4 .gallery>div .imgBox p img{width: 100%;
+        height: auto}
+
+.box4 .gallery>div .imglist {width: 90px;
+        height: 560px;
+        overflow: hidden;
+        margin-left: 90px;
+        margin-top: 10%;
+        }
+.box4 .gallery>div .imglist p {width: 90px;
+                                height: 130px;
+                                margin-top: 10px;
+                                }
+.box4 .gallery>div .imglist p img {width: 100%;}
+
+
+
+
+
+/* 다섯번째 섹션설정 */
+.box5 {display: flex;
+width: 100%;
+height: 100vh;
+justify-content: center;
+align-items: center;}
+.box5 div {width: 40%;
+        height: 100vh;
+position: relative;
+}
+
+.box5 div img{width: 100%;
+                height: 100%;
+                
+}
+.box5 div .btn001 {width: 150px;
+                height: 40px;
+                z-index: 999;
+                position: absolute;
+                left: 48%;
+                margin-left: -150px;
+                bottom: 10%;
+                background-color: #fff;
+                border-radius: 5px;
+                opacity: 0.7;
+                border: 1px solid #fff;
+                text-align: center;
+                box-sizing: border-box;
+                display: block;
+                padding-top: 10px;
+                }
+
+
+.box5 div .btn002 {width: 150px;
+                        height: 40px;
+                        z-index: 999;
+                        position: absolute;
+                        right: 30%;
+                        margin-left: -150px;
+                        bottom: 10%;
+                        background-color: #fff;
+                        border-radius: 5px;
+                        opacity: 0.7;
+                        border: 1px solid #fff;
+                        font-size: 14px;
+                        text-align: center;
+                        
+                        box-sizing: border-box;
+                        display: block;
+                        padding-top: 10px;
+                        }
+
+.box5 div .white001 {width: 254px;
+                        height: 55px;
+                        position: absolute;
+                        z-index: 999;
+                        left: 33%;
+                        bottom: 28%;}
+.box5 div .white002 {width: 254px;
+                        height: 25px;
+                        position: absolute;
+                        z-index: 999;
+                        left: 33%;
+                        bottom: 20%;}
+.box5 div p {font-size: 25px;
+                font-weight: bold;
+                color: #fff;
+                position: absolute;
+                bottom: 24%;
+                left: 48%;
+        }
+
+.box5 div video{height: 100%;}
+
+
+
+/* 여섯번째 섹션설정 */
+.box6 {
+        text-align: center;
+        width: 100%;
+        height: 200px;
+}
+.box6 img {display: inline-block;
+                margin-top: 40px;}
+.box6 img:nth-child(1) {}
+.box6 img:nth-child(2) {padding-bottom: 7px;}
+
+
+
+
+/* 푸터설정 */
+
+footer {height: 500px;
+        width: 100%;
+        background-color: #5b5b5b;
+        position: relative;}
+footer div {display: flex;}
+footer div ul {color: #fff;
+                margin: 60px 60px}
+footer div ul li {margin-bottom: 10px;
+                font-size: 15px;}
+footer div ul li:nth-child(1) {font-size: 20px;
+                                font-weight: bold;
+                                margin-bottom: 20px;}
+
+footer div img {position: absolute;
+                bottom: 20%;
+                right: 60px;}
+footer p {color: #fff;
+        position: absolute;
+        bottom: 20px;
+        right: 60px;
+        letter-spacing: 1px;}

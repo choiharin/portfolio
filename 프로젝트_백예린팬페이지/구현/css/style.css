@@ -1,0 +1,373 @@
+@charset 'UTF-8';
+
+@font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+Makasar&display=swap');
+
+/* 전체설정 */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+img {
+    vertical-align: bottom;
+}
+
+body {
+    font-family: 'Pretendard-Regular', sans-serif;
+    font-size: 14px;
+    height: 16000px;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+img {
+    vertical-align: bottom;
+}
+
+.background {
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 1;
+}
+
+.background img {
+    width: 100%;
+    height: 100vh;
+}
+
+
+.scroll {
+    background-color: #9ED3A3;
+    width: 160px;
+    height: 30px;
+    position: fixed;
+    right: 21%;
+    top: 55%;
+    animation: ani 0.5s infinite alternate;
+    z-index: 999;
+    font-family: 'Noto Serif Makasar', serif;
+    font-weight: bold;
+    border: 2px solid #fff;
+    border-radius: 20px;
+
+}
+
+@keyframes ani {
+
+    0% {
+        transform: scale(1);
+        opacity: 1;
+    }
+
+    100% {
+        transform: scale(1.1);
+        opacity: 0.8;
+    }
+}
+
+.scroll p {
+    width: 100%;
+    height: 100%;
+    font-size: 20px;
+    color: #fff;
+    margin-top: 3px;
+    text-align: center;
+
+
+}
+
+/* 헤더설정 */
+header {
+    width: 100%;
+    height: 100vh;
+    border: 35px solid #9ED3A3;
+    box-sizing: border-box;
+    z-index: 2;
+    position: fixed;
+    min-width: 100%;
+}
+
+
+/* 네비설정 */
+nav {
+    width: 300px;
+    height: auto;
+    position: fixed;
+    right: 0%;
+    bottom: 10%;
+    z-index: 998;
+}
+
+nav ul {
+    width: 100%;
+}
+
+nav ul li {
+    width: 100%;
+    height: 30px;
+
+
+    margin-bottom: 25px;
+    padding-bottom: 5px;
+    cursor: pointer;
+    font-family: 'Noto Serif Makasar', serif;
+    font-weight: bold;
+}
+
+nav ul li a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    font-size: 30px;
+    font-family: 'Noto Serif Makasar', serif;
+}
+
+nav ul li span {
+    display: block;
+    width: 0px;
+    height: 15px;
+    background-color: #9ED3A3;
+    margin-top: -15px;
+    transition: all 1.2s;
+}
+
+nav ul li:hover span {
+    width: 300px;
+}
+
+
+
+.name {
+    width: 400px;
+    height: auto;
+    position: fixed;
+    right: 15%;
+    top: 20%;
+
+}
+
+.name img {
+    width: 100%;
+    height: 100%;
+}
+
+
+/* 섹션설정 */
+section {
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    perspective: 2300px;
+    z-index: 997;
+}
+
+section article {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+}
+
+section article:nth-child(1) {
+    z-index: 6;
+    transform: translateZ(0px);
+}
+
+section article:nth-child(2) {
+    z-index: 5;
+    transform: translateZ(-5000px);
+}
+
+section article:nth-child(3) {
+    z-index: 4;
+    transform: translateZ(-10000px);
+}
+
+section article:nth-child(4) {
+    z-index: 3;
+    transform: translateZ(-15000px);
+}
+
+
+/* 첫번째 아티클 */
+section .main001 img {
+    width: 620px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 60%;
+    margin-right: -300px;
+}
+
+/* 인물 */
+section .main001 img:nth-child(1) {
+    z-index: 7;
+}
+
+/* 꽃 1,2 */
+section .main001 img:nth-child(2) {
+    width: 700px;
+    height: auto;
+    z-index: 4;
+    bottom: 0;
+    left: 100px;
+}
+
+section .main001 img:nth-child(3) {
+    width: 700px;
+    height: 100%;
+    top: 50px;
+    left: 170px;
+    opacity: 60%;
+}
+
+
+/* 나비 1,2,3 */
+section .main001 .p1 {
+    width: 230px;
+    height: auto;
+    z-index: 999;
+    right: 950px;
+    top: 400px;
+}
+
+section .main001 .p2 {
+    width: 150px;
+    height: auto;
+    z-index: 999;
+    top: 60px;
+    right: 1300px;
+}
+
+section .main001 .p3 {
+    width: 380px;
+    height: auto;
+    z-index: 999;
+    left: 100px;
+    top: 130px;
+}
+
+
+/* 두번째 아티클 */
+section .main002 img {
+    width: 1000px;
+    height: 1000px;
+    position: absolute;
+    bottom: 0;
+    left: 45%;
+    margin-left: -500px;
+    z-index: 3;
+}
+
+
+section .main002 .p4 {
+    top: -10px;
+    left: 856px;
+    z-index: 2;
+}
+
+section .main002 .p5 {
+    width: 350px;
+    height: auto;
+    top: 400px;
+    left: 1500px;
+    rotate: 30deg;
+    z-index: 2;
+}
+
+section .main002 .p6 {
+    top: -50px;
+    left: 860px;
+    z-index: 1;
+}
+
+section .main002 .p7 {
+    width: 500px;
+    height: auto;
+    position: absolute;
+    top: 200px;
+    left: 700px;
+    rotate: 40deg;
+    z-index: 2;
+}
+
+/* 세번째 아티클 */
+section .main003 img {
+    width: 809px;
+    height: 974px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    margin-left: -449.5px;
+}
+
+section .main003 .p8 {
+    width: auto;
+    height: 700px;
+    rotate: 40deg;
+    position: absolute;
+    left: 1350px;
+    bottom: 250px;
+}
+
+section .main003 .p9 {
+    z-index: -1;
+    rotate: -30deg;
+    position: absolute;
+    left: 700px;
+    top: 100px;
+    width: auto;
+    height: 1200px;
+}
+
+section .main003 .p10 {
+    width: 1000px;
+    height: auto;
+    z-index: -2;
+    rotate: -40deg;
+    top: 20px;
+    left: 500px;
+
+}
+
+
+/* 네번째 아티클 */
+section .main004 img {
+    width: 800px;
+    height: 100%;
+    bottom: 0;
+    position: absolute;
+    left: 50%;
+    margin-left: -420px;
+    z-index: 1;
+
+}
+
+section .main004 .p11 {
+    z-index: -1;
+    width: 500px;
+    height: auto;
+    top: 130px;
+    left: 800px;
+}

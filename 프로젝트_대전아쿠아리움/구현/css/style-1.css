@@ -1,0 +1,734 @@
+@charset 'utf-8';
+@font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+/* 전체설정 */
+* {margin: 0;
+    padding: 0;}
+ul,ol {list-style: none;}
+a {text-decoration: none;
+    color: #000;}
+h1 {font-size: 70px;
+    font-weight: bold;}
+img {border: 0;
+    vertical-align: bottom;}
+body {font-family: 'Pretendard-Regular', sans-serif;
+        font-size: 14px;
+    overflow-x: hidden;}
+header {
+        width: 100%;
+        height: 100vh;
+        position: relative;
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;}
+
+article {width: 100%;
+        height: 100vh;}
+
+/* 배경설정 */
+
+.background {height: 100vh;
+            width: 100%;
+            position: absolute;
+            z-index: -999;
+        }
+.background ul {width: 100%;
+                height: 100%;}
+.background ul li {position: absolute;
+                    width: 100%;
+                    height: 100%;
+                    opacity: 0;
+                    left: 0;}
+.background ul li:nth-child(1) {background-image: url(../img/bg001.jpg);
+                                opacity: 1;
+                                    background-size: cover;}
+.background ul li:nth-child(2) {background-image: url(../img/bg002.jpg);
+        background-size: cover;}
+.background ul li:nth-child(3) {background-image: url(../img/bg003.jpg);
+        background-size: cover;}
+
+
+        .top {    width: 50px;
+            height: 50px;
+            position: fixed;
+            bottom: 50px;
+            right: 50px;
+            background-image: url(../img/top.png);
+            background-size: cover;
+            background-repeat: no-repeat;
+            border: 3px solid #2400FF;
+            border-radius: 40px;
+            z-index: 999;
+            cursor: pointer;}
+
+/* logo 설정 */
+
+.logo {text-align: center;
+        padding: 20px;
+        }
+.logo h1 {}
+.logo img {width: 340px;}
+
+/* snsSet 설정 */
+.boxB {
+        position: absolute;
+    top: 50px;
+    left: 50px;}
+.boxB ul {display: flex;}
+.boxB ul li {}
+.boxB ul li a {padding: 7px;}
+.boxB ul li a img {width: 30px;}
+
+
+/* gnb 설정 */
+.gnb {margin-bottom: 60px;}
+.gnb ul {display: flex;
+        padding: 10px;
+        justify-content: center;}
+.gnb ul li {text-align: center;
+            }
+.gnb ul li a:hover {color: #7BFFB0;}
+.gnb ul li a {color: #fff;
+                padding: 80px;
+                font-size: 18px;
+                cursor: pointer;}
+
+
+/* inconSet 설정 */
+.iconSet {
+        display: flex;
+        justify-content: center;
+
+        }
+.iconSet li {padding: 50px 40px;}
+.iconSet li a {display: block;
+                text-align: center;}
+.iconSet li a p {color: #fff;
+                font-size: 16px;
+                padding-top: 20px;
+                letter-spacing: 1px;}
+.iconSet li:nth-child(3) {margin-top: 30px;}
+.iconSet li:nth-child(3) img {margin-top: -16px;}
+.iconSet li:nth-child(4) p {margin-top: -10px;}
+
+
+
+
+
+/* 슬로건 설정 */
+.boxD {
+        padding: 90px;
+    text-align: center;
+    margin-bottom: 50px;}
+.boxD div {}
+.boxD div h1 {color: #fff;
+line-height: 75px;
+letter-spacing: 3px;
+font-size: 50px;}
+.boxD div h1 em {font-style: normal;
+                color: #7BFFB0;}
+
+
+
+
+
+
+
+
+/* 층별안내설정 */
+
+.box1 {position: relative;}
+.box1 .box1-1 div {
+position: absolute;
+top: 10%;}
+
+.box1-2 {width: 450px;
+        height: 70px;
+        position: absolute;
+        top: 5px;
+        right: 0px;}
+
+.box1-2 ul {display: flex;
+                position: absolute;
+                right: 0;
+                top: 12%;
+                z-index: 2;}
+.box1 .box1-2 ul li {background-color: #2400FF;
+                    font-size: 20px;
+                    color: #fff;
+                    padding: 10px 35px;
+                    margin: 10px;
+                    border-radius: 2px;}
+
+.box1 .box1-2 ul li:hover {background-color: #7BFFB0;
+color: #3a3a3a;}
+
+
+/*                
+.map_img img {width: 1000px;
+    height: auto;
+    justify-content: center;}
+.slider {display: flex;} */
+
+
+
+/* 층별안내설정 */
+
+.box1 .box1-1 div {width: 
+    300px;
+    height: 150px;
+    position: absolute;
+    top: 10px;}
+
+
+
+.map_img {
+position: relative;
+height: 700px;}
+.map_img>div {
+
+display: none;
+}
+.map_img>div:nth-child(1) {display: block;}
+
+.map_img>div .roomBox {width: 1300px;
+                height: 718px;
+                background-image: url(../img/map001.png);
+            background-repeat: no-repeat;
+            position: relative;
+            z-index: 1;
+            margin-top: 10%;
+
+}
+
+
+.map_img>div .roomBox li {position: absolute;
+                            width: 100px;
+                            height: 60px;}
+
+
+.map_img>div .roomBox .room001 {
+                                        left: 38%;
+                                        top: 76%;
+                                        background-image: url(../img/1f001.png);
+                                        background-size: contain;
+                                        background-repeat: no-repeat;
+                                        width: 90px;}
+.map_img>div .roomBox .room002 {left: 26%;
+                                        top: 61%;
+                                        background-image: url(../img/1f002.png);
+                                        background-size: contain;
+                                        background-repeat: no-repeat;
+                                        }
+.map_img>div .roomBox .room003 {left: 10%;
+                                        top: 50%;
+                                        background-image: url(../img/1f003.png);
+                                        background-size: contain;
+                                        background-repeat: no-repeat;
+                                        width: 150px;}
+.map_img>div .roomBox .room004 {left: 13.5%;
+                                        top: 30%;
+                                        background-image: url(../img/1f004.png);
+                                        background-size: contain;
+                                        background-repeat: no-repeat;
+                                        width: 110px;}
+.map_img>div .roomBox .room005 {left: 30%;
+                                        top: 19%;
+                                        background-image: url(../img/1f005.png);
+                                        background-size: contain;
+                                        background-repeat: no-repeat;}
+.map_img>div .roomBox .room006 {left: 45%;
+                                        top: 42.5%;
+                                        background-image: url(../img/1f006.png);
+                                        background-size: contain;
+                                        background-repeat: no-repeat;
+                                    width: 120px;}
+.map_img>div .roomBox .room007 {left: 62%;
+                                        top: 19%;
+                                        background-image: url(../img/1f007.png);
+                                        background-size: contain;
+                                        background-repeat: no-repeat;
+                                        width: 120px;}
+.map_img>div .roomBox .room008 {left: 78.2%;
+                                        top: 30%;
+                                        background-image: url(../img/1f008.png);
+                                        background-size: contain;
+                                        background-repeat: no-repeat;
+                                        width: 155px;}
+.map_img>div .roomBox .room009 {left: 77.5%;
+                                        top: 45%;
+                                        background-image: url(../img/1f009.png);
+                                        background-size: contain;
+                                        background-repeat: no-repeat;
+                                        width: 150px;}
+.map_img>div .roomBox .room010 {left: 67%;
+                                        top: 61%;
+                                        background-image: url(../img/1f010.png);
+                                        background-size: contain;
+                                        background-repeat: no-repeat;
+                                        width: 90px;}
+.map_img>div .roomBox .room011 {left: 80%;
+                                        top: 67%;
+                                        background-image: url(../img/1f011.png);
+                                        background-size: contain;
+                                        background-repeat: no-repeat;
+                                        width: 130px;}
+.map_img>div .roomBox .room012 {left: 77%;
+                                        top:77%;
+                                        background-image: url(../img/1f012.png);
+                                        background-size: contain;
+                                        background-repeat: no-repeat;
+                                        width: 110px;
+                                    }
+
+
+
+
+.map_img .txtBox {position: relative;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        
+                        width: 810px;
+                        height: 100px;
+                        background-color: #2400FF;
+                        border: #2400FF solid 2px;
+                        margin-left: auto;
+                        margin-right: auto;
+display: none;
+                        }
+.map_img .txtBox p{ position: absolute;
+                    width: 100%;
+                    height: 100%;
+                    left: 0;
+                        bottom: 0;
+                    z-index: 0;   }
+
+.map_img .txtBox p.on {z-index: 1;}
+                        
+/* 상단 이름 */
+.map_img .txtBox p strong {font-size: 22px;
+                                color: #fff;
+                            position: absolute;
+                        bottom: 65px;
+                        left: 10px;
+                        background-color: #2400FF;
+                        width: 800px;}
+.map_img .txtBox p strong em {font-size: 14px;
+                                    font-style: normal;
+                                    font-weight: lighter;
+                                    padding-left: 10px;}
+/* 설명 */
+.map_img .txtBox p span {position: absolute;
+                        width: 800px;
+                        height: 50px;
+                        left: 0;
+                        bottom: 0;
+                        background-color: #fff;
+                        padding-top: 10px;
+                        padding-left: 10px;
+                        line-height: 17px;
+
+
+                                }
+
+
+
+.map001>span {font-size: 200px;
+                color: #e6e6e6;
+                font-weight: bold;
+                z-index: -1;
+                position: absolute;
+                top: 60%;
+                right: -5%;}
+
+
+
+/* 프로그램안내 설정 */
+
+.box2 {
+        height: 100vh;
+        display: flex;}
+.box2-1 {
+        width: 500px;
+        height: 200px;}
+.box2-1 h1 {}
+.box2-1 img {}
+.box2-1 p {font-size: 16px;}
+
+
+
+.box2-2 {margin-left: 150px;
+    position: relative;
+        width: 54%;
+        overflow: hidden;}
+.box2-2 .arrow001 {font-size: 20px;
+                font-weight: bold;
+                position: absolute;
+                top: 550px;
+                z-index: 999;
+                width: 53px;
+                height: 30px;
+                }
+.box2-2 .arrow001 span {margin-right: 10px;
+                    cursor: pointer;
+                    width: 100%;
+                    height: 100%;}
+.box2-2 .arrow001 span:hover {color: #7BFFB0;}
+
+
+.box2-2 .arrow001 .left001 {width: 100%;
+                            height: auto;}
+
+.box2-2 .arrow001 .right001 {width: 100%;
+                                height: auto;}
+                            
+                            
+.box2-2 .num001 {font-size: 70px;
+                font-weight: bold;
+                position: absolute;
+                top: 270px;
+                z-index: 999;
+                }
+.box2-2 .num001 em {font-style: normal;
+                    font-size: 20px;}
+
+
+.box2-2 ul {
+            position: relative;
+            left: 0;
+            display: flex;
+            }
+
+.box2-2 ul li {height: 100%;
+                width: 100%;
+                position: absolute;
+                left: 100%;
+                }
+
+                .box2-2 ul li:nth-child(1) {left: 0;}
+
+                .box2-2 ul li:nth-child(2) p {left: 190px;}
+.box2-2 ul li img {height: 600px;
+                    width: auto;}
+.box2-2 ul li p {position: absolute;
+                font-size: 16px;
+                left: 255px;
+                margin-top: 10px;
+}
+
+
+
+
+
+/* 체험안내 설정 */
+
+.box3 {
+    height: 100vh;
+    display: flex;}
+.box3-1 {
+    width: 500px;
+    height: 200px;}
+.box3-1 h1 {}
+.box3-1 img {}
+.box3-1 p {font-size: 16px;}
+
+
+
+.box3-2 {margin-left: 150px;
+position: relative;
+    width: 54%;
+    overflow: hidden;}
+.box3-2 .arrow002 {font-size: 20px;
+            font-weight: bold;
+            position: absolute;
+            top: 550px;
+            z-index: 999;
+            width: 30px;
+            height: 10px;
+            width: 53px;
+                height: 30px;
+            }
+.box3-2 .arrow002 span {margin-right: 10px;
+                        cursor: pointer;}
+.box3-2 .arrow002 span:hover {color: #7BFFB0;}
+
+
+.box3-2 .arrow002 .left002 {width: 100%;
+    height: auto;}
+
+.box3-2 .arrow002 .right002 {width: 100%;
+        height: auto;}
+
+.box3-2 .num002 {font-size: 70px;
+            font-weight: bold;
+            position: absolute;
+            top: 270px;
+            z-index: 999;
+            }
+
+            
+.box3-2 .num002 em {font-style: normal;
+                font-size: 20px;}
+
+
+.box3-2 ul {
+        position: relative;
+        left: 0;
+        display: flex;
+        }
+
+.box3-2 ul li {height: 100%;
+            width: 100%;
+            position: absolute;
+            left: 100%;
+            }
+
+            .box3-2 ul li:nth-child(1) {left: 0;}
+
+            .box3-2 ul li:nth-child(2) p {left: 190px;}
+.box3-2 ul li img {height: 600px;
+                width: auto;}
+.box3-2 ul li p {position: absolute;
+            font-size: 15px;
+            left: 255px;
+            margin-top: 10px;
+}
+
+
+
+/* 공지이벤트 설정 */
+.box4 .box4-2 {display: flex;
+                align-items: center;
+                justify-content: center;
+                
+                margin-top: 50px;}
+.box4 .img_box {width: 500px;
+                border-radius: 10px;}
+.notice_box .img_box {width: 50%;}
+.box4 .box4-2 .notice_box {width: 500px;
+                            height: 500px;
+                            border-radius: 10px;
+    background-color: #f2f2f2;
+    position: relative;
+    margin-right: 70px;}
+    .box4 .box4-2 .notice_box h2 {
+                                    position: absolute;
+                                    font-size: 35px;
+                                    letter-spacing: 1px;
+                                    font-weight: bold;
+                                    left: 30px;
+                                    top: 100px;}
+.box4 .box4-2 .notice_txt {
+                            margin-top: 170px;}
+.box4 .box4-2 .notice_txt li {padding: 15px 0px;
+                    border-bottom: 2px dotted #3a3a3a;
+                    font-size: 15px;
+                    margin: 0px 30px;
+                    cursor: pointer;
+                    }
+.box4 .box4-2 li span {float: right;
+                        color: #bababa;
+                        letter-spacing: 1px;}
+
+.trailer_3 {
+            width: 500px;
+            height: 500px;
+    overflow: hidden;
+}
+.trailer_3 ul {
+            position: relative;
+            left: 0;
+            display: flex;}
+.trailer_3 ul li {width: 500px;
+                    height: 500px;
+                    position: absolute;
+                    left: -500px;}
+.trailer_3 ul li:nth-child(1) {left: 0;}
+.trailer_3 ul li img {width: 100%;
+                        height: 100%;}
+
+
+
+
+
+/* 지금아쿠아리움은 설정 */
+.box5 {}
+.imgList ul {display: flex;
+            flex-wrap: wrap;
+            margin-top: 50px;
+}
+.box5-2 {}
+.imgList li {width: 20%;
+            padding-bottom: 20px;
+        text-align: center;
+            }
+
+        .imgList li img {width: 150px;}
+
+
+        .imgList li:hover {transform: scale(1.2);}
+
+
+
+
+
+/* 오시는 길 설정 */
+iframe {width: 100%;
+    height: 100%;}
+.box6 {
+    display: flex;
+    margin: auto;
+    color: #fff;
+    flex-wrap: wrap;
+position: relative;
+height: 1000px;}
+.box6 .box6-1 {background-color: #2400FF;
+        width: 465px;
+        height: 600px;
+        opacity: 70%;
+        border-radius: 15px;
+        position: absolute;
+        padding: 40px;
+        box-sizing: border-box;
+        top: 20%;
+        right: 10%;}
+.box6-1 div:first-child {text-align: right;
+                        padding-bottom: 20px;
+                        border-bottom: 1px solid #fff;}
+.box6-1 div:first-child p {margin-top: 40px;
+                            margin-right: 60px;
+                            font-size: 16px;
+                        }
+.box6-1 div:first-child img {position: absolute;
+                            left:78%;}
+.box6-1 div:last-child {
+                        position: relative;
+                        top: -50px;
+                        margin-top:110px;
+                        }
+.box6-1 div:last-child img {width: 33px;}
+.box6-1 div:last-child p {padding: 10px 0 20px 0;
+                            line-height: 20px;
+                            font-size: 16px;
+                            line-height: 28px;}                      
+.box6-1 div:last-child strong {font-size: 20px;
+                                margin-left: 5px;}
+.box6-1 div:nth-child(2) .park {
+                                position: absolute;
+                                left: 18%;
+                                top: 68.5%;}
+.box6-1 div:last-child span img {width: 33px;}
+
+
+
+
+/* 자주하는 질문 설정 */
+
+.box7 {
+    display: flex;}
+.box7>div {width: 50%;}
+.box7-1 .box-2 {}
+.box7-2 {}
+.box7-2>div {background-color: #f2f2f2;
+            border-radius: 20px;
+            width: 712px;
+            height: 600px;
+            margin-top: 5%;}
+.box7-2>div ul {padding: 30px;}
+.box7-2>div ul li {background-color: #fff;
+                    border-radius: 5px;
+                    padding: 10px;
+                    margin-bottom: 20px;
+                    font-size: 15px;
+                    padding-left: 20px;
+                    }
+.box7-2>div ul li div {padding: 5px 0;}
+.box7-2>div ul li div:first-child {font-weight: bolder;}
+.box7-2>div ul li div em {font-size: 20px;
+                            color: #2400FF;
+                            font-weight: bolder;
+                            font-style: normal;
+                            margin-right: 10px;}
+.box7-2>div ul li div strong {font-size: 20px;
+                            color: #7BFFB0;
+                                font-weight: bolder;
+                                margin-right: 10px;}
+
+
+
+
+
+
+
+
+
+/* 푸터 설정 */
+footer {position: relative;
+    background-color: #4b4b4b;
+    height: 320px;}
+footer>div {
+            height: 100px;}
+footer>div img {position: absolute;
+                top: 10%;
+                left: 10%;}
+.add {color: #fff;
+        position: absolute;
+        top: 65%;
+        left: 15%;
+        line-height: 20px;
+        letter-spacing: 1px;
+        font-size: 15px;}
+
+.menu2 {color: #fff;
+        display: flex;
+        text-align: center;
+        justify-content: flex-end;
+        margin-right: 7%;}
+.menu2 ul {
+        margin: -10px 40px;}
+.menu2 ul li:first-child {font-weight: bolder;
+                            font-size: 20px;
+                            margin-bottom: 20px;}
+.menu2 ul li {margin-bottom: 10px;
+                font-size: 16px;}
+
+
+
+
+
+/* 미디어쿼리구간설정/////////////////////////////////////////////// */
+
+
+/* 588 이하 구간 */
+@media(max-width:587px) {
+
+    
+}
+
+
+/* 768 이상 구간 */
+@media(min-width:768px) {
+
+
+    /* 레이아웃설정 */
+
+}
+
+
+/* 1140px 이상구간  */
+@media(min-width:1140px) {
+
+.box1, .box2, .box3, .box4, .box5, .box7 {
+    width: 1280px;
+    height: 1200px;
+    margin-left:  auto;
+    margin-right: auto;
+    margin-top: 5%;}
+}

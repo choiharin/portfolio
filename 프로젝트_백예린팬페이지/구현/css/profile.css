@@ -1,0 +1,341 @@
+@charset 'UTF-8';
+
+@font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+Makasar&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+img {
+    vertical-align: bottom;
+}
+
+body {
+    font-family: 'Pretendard-Regular', sans-serif;
+    font-size: 14px;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+img {
+    vertical-align: bottom;
+}
+
+section {
+    height: 1400px;
+    width: 100%;
+}
+
+/* 배경설정 */
+.background {
+    width: 100%;
+    height: 100vh;
+    min-width: 100%;
+    position: relative;
+}
+
+.background img {
+    width: 100%;
+    height: 100vh;
+    min-width: 100%;
+    position: fixed;
+    z-index: -1;
+}
+
+.top {
+    width: 60px;
+    height: 60px;
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    background-image: url(../img/top.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: 3px solid #fff;
+    border-radius: 40px;
+    z-index: 999;
+    cursor: pointer;
+}
+
+.scroll {
+    width: 160px;
+    height: 110px;
+    position: absolute;
+    background-image: url(../img/scroll.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    left: 50%;
+    margin-left: -80px;
+    top: 85%;
+    animation: ani 0.5s infinite alternate;
+}
+
+@keyframes ani {
+
+    0% {
+        transform: scale(1);
+        opacity: 1;
+    }
+
+    100% {
+        transform: scale(1.1);
+        opacity: 0.8;
+    }
+}
+
+
+.scroll p {width: 100%;
+            height: 100%;}
+
+/* 네비설정 */
+nav {
+    width: 450px;
+    height: 30px;
+    position: absolute;
+    left: 20px;
+    top: 30px;
+    z-index: 999;
+}
+
+nav ul {
+    display: flex;
+}
+
+nav ul li {
+    font-size: 20px;
+    color: #fff;
+    margin: 0 15px;
+    cursor: pointer;
+    font-family: 'Noto Serif Makasar', serif;
+    font-weight: bold;
+}
+
+nav ul li span {
+    display: block;
+    width: 0px;
+    height: 10px;
+    background-color: #9ED3A3;
+    margin-top: -15px;
+    transition: all 0.8s;
+}
+
+nav ul li a {
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    font-size: 20px;
+}
+
+nav ul li:nth-child(1):hover span {
+    width: 45px;
+}
+
+nav ul li:nth-child(2) span {
+    width: 65px;
+}
+
+nav ul li:nth-child(3):hover span {
+    width: 65px;
+}
+
+nav ul li:nth-child(4):hover span {
+    width: 55px;
+}
+
+nav ul li:nth-child(5):hover span {
+    width: 55px;
+}
+
+
+/* 첫번째 섹션설정 */
+
+.polar {
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.polar ul {
+    width: 1500px;
+    height: 500px;
+    display: flex;
+    position: absolute;
+    top: 50%;
+    margin-top: -250px;
+    left: 50%;
+    margin-left: -750px;
+}
+
+.polar ul li {
+    width: 500px;
+    height: auto;
+    transition: all 0.3s;
+}
+
+.polar ul li:hover {
+    transform: rotate(-5deg);
+}
+
+.polar ul li img {
+    width: 100%;
+    height: 100%;
+}
+
+
+
+/* 두번째 섹션설정 */
+
+
+/* 프로필 이미지 */
+.profile {
+    width: 100%;
+    height: 1500px;
+    position: relative;
+}
+
+.profile .proImg ul {
+    width: 600px;
+    height: 600px;
+    position: absolute;
+    top: 50%;
+    margin-top: -350px;
+    left: 15%;
+    overflow: hidden;
+    z-index: 1;
+    border: 10px solid #9B8098;
+}
+
+.profile .proImg ul li {
+    width: 600px;
+    height: auto;
+    top: 100%;
+    position: absolute;
+}
+
+.profile .proImg ul li:nth-child(1) {
+    top: 0;
+}
+
+.profile .proImg ul li img {
+    width: 100%;
+    height: 100%;
+}
+
+
+/* 프로필 텍스트 */
+
+.profile .proTxt {
+    width: 900px;
+    height: 380px;
+    position: absolute;
+    top: 50%;
+    margin-top: -190px;
+    left: 800px;
+}
+
+.profile .proTxt img:nth-child(1) {
+    width: 100%;
+    height: auto;
+}
+
+.profile .proTxt img:nth-child(2) {
+    width: 150px;
+    height: auto;
+    position: absolute;
+    left: 798px;
+    top: -45px;
+}
+
+.profile .proTxt div {
+    position: absolute;
+    bottom: 100px;
+    right: 70px;
+    width: 700px;
+    text-align: right;
+}
+
+.profile .proTxt p {
+    font-size: 50px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.profile .proTxt em {
+    font-style: normal;
+    font-size: 20px;
+}
+
+.profile .proTxt span {
+    font-size: 16px;
+}
+
+
+/* 세번째 섹션설정 */
+
+.band {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    background-color: #fff;
+    overflow: hidden;
+}
+
+.band .bandtxt001 {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+}
+
+.band .bandtxt002 {
+    z-index: 1;
+    position: absolute;
+    left: 27%;
+}
+
+.band .band001 {
+    width: auto;
+    height: 100%;
+    position: absolute;
+    left: 20%;
+}
+
+.band .band002 {
+    width: auto;
+    height: 100%;
+    position: absolute;
+    right: 0;
+}
+
+.band .lp {
+    width: 300px;
+    height: auto;
+    position: absolute;
+    bottom: -16%;
+    left: 830px;
+    animation: rotate_image 2s linear infinite;
+    transform-origin: 50% 50%;
+}
+
+@keyframes rotate_image {
+    100% {
+        transform: rotate(360deg);
+    }
+}

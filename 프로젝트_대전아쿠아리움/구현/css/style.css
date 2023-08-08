@@ -1,0 +1,285 @@
+@charset 'utf-8';
+@font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+/* 전체설정 */
+* {margin: 0;
+    padding: 0;}
+ul,ol {list-style: none;}
+a {text-decoration: none;
+    color: #000;}
+h1 {font-size: 70px;
+    font-weight: bold;}
+img {border: 0;
+    vertical-align: bottom;}
+body {font-family: 'Pretendard-Regular', sans-serif;
+        font-size: 14px;}
+header {background-image: url(../img/bg002.jpg);
+        width: 100%;
+        height: auto;
+        position: relative;}
+section {}
+
+
+
+
+/* logo 설정 */
+
+.logo {text-align: center;
+        padding: 30px;}
+.logo h1 {}
+
+/* snsSet 설정 */
+.boxB {
+        position: absolute;
+    top: 50px;
+    left: 50px;}
+.boxB ul {display: flex;}
+.boxB ul li {}
+.boxB ul li a {padding: 7px;}
+.boxB ul li a img {width: 30px;}
+
+
+/* gnb 설정 */
+.gnb {margin-bottom: 60px;}
+.gnb ul {display: flex;
+        padding: 10px;
+        justify-content: center;}
+.gnb ul li {text-align: center;}
+.gnb ul li a {color: #fff;
+                padding: 80px;
+                font-size: 18px;}
+
+
+/* inconSet 설정 */
+.iconSet {
+        display: flex;
+        justify-content: center;}
+.iconSet li {padding: 50px;}
+.iconSet li a {display: block;
+                text-align: center;}
+.iconSet li a p {color: #fff;
+                font-size: 16px;
+                padding-top: 20px;}
+.iconSet li:nth-child(3) {margin-top: 30px;}
+.iconSet li:nth-child(3) img {margin-top: -16px;}
+.iconSet li:nth-child(4) p {margin-top: -10px;}
+
+
+
+
+
+/* 슬로건 설정 */
+.boxD {
+        padding: 90px;
+    text-align: center;
+    margin-bottom: 50px;}
+.boxD div {}
+.boxD div h1 {color: #fff;
+line-height: 75px;
+letter-spacing: 3px;
+font-size: 50px;}
+.boxD div h1 em {font-style: normal;
+                color: #7BFFB0;}
+
+
+
+
+
+
+
+
+/* 층별안내설정 */
+.box1 {}
+.box1 .box1-1 {display: flex;
+                margin-top: 120px;}
+.box1 .box1-2 {position: absolute;
+                top: 960px;
+                left: 40%;}
+.box1 .box1-2 ul {display: flex;
+    margin-top: 140px;
+    margin-left: 250px;
+justify-content: flex-end;}
+.box1 .box1-2 ul li {background-color: #2400FF;
+                    font-size: 20px;
+                    color: #fff;
+                    padding: 20px 45px;
+                    margin: 10px;}
+.box1 .box1-2 ul li:hover {background-color: #7BFFB0;
+                            color: #3a3a3a;}
+.floor_map {display: flex;
+            justify-content: center;}
+.floor_map img {width: 1000px;
+    height: auto;
+    justify-content: center;}
+.slider {display: flex;}
+.slider img {position: absolute;
+            top: 1300px;
+            left: 60px;}
+
+
+
+
+
+
+
+
+/* 프로그램안내 설정 */
+.box2 {width: 1280px;
+        display: flex;
+        margin: auto;}
+.box2 .box2-1 {display: flex;
+    margin-top: 130px;
+    margin-top: 40%;}
+.box2 .box2-1 div {}
+.box2 .box2-1 p {position: absolute;
+    font-size: 20px;
+margin-top: 200px;}
+
+
+.box2 .box2-2 {margin-left: 30%;
+                margin-top: 40%;}
+                
+.trailer_1 {}
+.trailer_1 div {display: flex;
+    justify-content: flex-end;
+    font-size: 70px;
+    font-weight: bold;}
+.trailer_1 div em {font-style: normal;
+                    font-size: 16px;
+                    font-weight: bold;
+                    position: absolute;
+                    background-color: antiquewhite;}
+
+.arrow {background-color: #eee;
+        position: absolute;
+        display: flex;}
+.arrow span {display: block;
+        font-size: 20px;
+        font-weight: 800;
+        color: #000;
+        padding: 15px;
+        cursor: pointer;}
+.arrow span:hover {color: #7BFFB0;}
+.box2 .box2-2 .trailer_1 ul {}
+.trailer_1 ul li {padding-bottom: 50px;}
+.trailer_1 ul img {padding-bottom: 30px;}
+.trailer_1 ul li p {font-size: 16px;}
+
+
+
+
+
+
+
+/* 체험안내 설정 */
+.box3 {width: 1280px;
+    display: flex;
+    margin: auto;}
+.box3 .box3-1 {isplay: flex;
+    margin-top: 130px;
+    margin-top: 40%;}
+.box3 .box3-1 div {}
+.box3 .box3-1 p {position: absolute;
+    font-size: 20px;
+margin-top: 200px;}
+
+.box3 .box3-2 {margin-left: 30%;
+    margin-top: 40%;}
+    
+.trailer_2 {}
+.trailer_2 div {display: flex;
+justify-content: flex-end;
+font-size: 70px;
+font-weight: bold;}
+.trailer_2 div em {font-style: normal;
+        font-size: 16px;
+        font-weight: bold;
+        position: absolute;
+        background-color: antiquewhite;}
+
+.arrow {background-color: #eee;
+position: absolute;
+display: flex;}
+.arrow span {display: block;
+font-size: 20px;
+font-weight: 800;
+color: #000;
+padding: 15px;
+cursor: pointer;}
+.arrow span:hover {color: #7BFFB0;}
+.box3 .box3-2 .trailer_1 ul {}
+.trailer_2 ul li {padding-bottom: 50px;}
+.trailer_2 ul img {padding-bottom: 30px;}
+.trailer_2 ul li p {font-size: 16px;}
+
+
+/* 공지이벤트 설정 */
+.box4 {width: 1280px;
+    display: flex;
+    margin: auto;}
+.box4 .box4-1 {}
+.box4 .box4-1 .div {}
+.box4 .box4-1 div h1 {}
+.box4 .box4-1 div img {}
+.box4 .box4-2 {display: flex;
+    background-color: #f2f2f2;
+    width: 500px;
+    height: 500px;}
+
+.box4 .box4-2 .notice {}
+.box4 .box4-2 .notice .div {}
+.box4 .box4-2 .notice .div h2 {}
+.box4 .box4-2 .ul {}
+
+
+
+/* 지금아쿠아리움은 설정 */
+.box5 {width: 1280px;
+    display: flex;
+    margin: auto;}
+
+/* 오시는 길 설정 */
+.box6 {width: 1280px;
+    display: flex;
+    margin: auto;}
+
+/* 자주하는 질문 설정 */
+.box7 {width: 1280px;
+    display: flex;
+    margin: auto;}
+
+
+
+
+/* 미디어쿼리구간설정/////////////////////////////////////////////// */
+
+
+/* 588 이하 구간 */
+@media(max-width:587px) {
+
+    
+}
+
+
+/* 768 이상 구간 */
+@media(min-width:768px) {
+
+
+    /* 레이아웃설정 */
+
+}
+
+
+/* 1140px 이상구간  */
+@media(min-width:1140px) {
+
+.box1, .box2, .box3, .box4, .box5, .box6, .box7 {
+    width: 1280px;
+    margin: 0 auto;}
+}
